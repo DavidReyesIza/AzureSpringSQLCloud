@@ -31,7 +31,7 @@ public class AzureDavidApplication {
 		
 	}
 	
-	
+	@CrossOrigin(origins = "*", allowedHeaders = "*")
 	@GetMapping("/employees")
 	public List<Employee> getEmployees(){
 		return repository.findAll();
