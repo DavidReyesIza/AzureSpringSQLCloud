@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-@CrossOrigin(origins = "*", allowedHeaders = "*")
+@CrossOrigin(origins = "http://localhost:4200")
 public class AzureDavidApplication {
 	
 	@Autowired
@@ -22,7 +22,7 @@ public class AzureDavidApplication {
 	
 	@GetMapping("/message")
 	public String messasge() {
-		return "Desplegado en Azure test preubaaaaa sie!";
+		return "Desplegado en Azure test preubaaaaa sieee!";
 	}
 	
 	@PostMapping("/employee")
