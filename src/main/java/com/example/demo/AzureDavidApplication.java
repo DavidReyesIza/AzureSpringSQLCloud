@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
 public class AzureDavidApplication {
 	
 	@Autowired
@@ -30,6 +30,8 @@ public class AzureDavidApplication {
 		return repository.save(employee);
 		
 	}
+	
+	
 	
 	@CrossOrigin(origins = "*", allowedHeaders = "*")
 	@GetMapping("/employees")
