@@ -1,6 +1,7 @@
 package com.example.demo;
 
+import org.springframework.data.repository.CrudRepository;
 
-public interface EmployeeRepository extends  org.springframework.data.jpa.repository.JpaRepository<Employee, Integer>{
+public interface EmployeeRepository extends  CrudRepository<Employee, Integer>{
 
 }

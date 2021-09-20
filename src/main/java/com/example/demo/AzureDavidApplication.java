@@ -59,8 +59,14 @@ public class AzureDavidApplication {
 	
 	@GetMapping("/employees")
 	public List<Employee> getEmployees(){
-		return repository.findAll();
+		return (List<Employee>) repository.findAll();
 		
+	}
+	
+	@GetMapping("/employee/{id}")
+	public Employee getEmployee(@PathVariable Integer id) {
+		
+		return repository.findById(id).orElse(null);
 	}
 
 	public static void main(String[] args) {
