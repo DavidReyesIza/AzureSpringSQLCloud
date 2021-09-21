@@ -19,7 +19,6 @@ import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 @SpringBootApplication
 @RestController
 @CrossOrigin(origins = "*", allowedHeaders = "*")
-@OpenAPIDefinition
 public class AzureDavidApplication {
 	
 	@Autowired
