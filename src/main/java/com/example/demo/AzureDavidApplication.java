@@ -14,9 +14,12 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+
 @SpringBootApplication
 @RestController
 @CrossOrigin(origins = "*", allowedHeaders = "*")
+@OpenAPIDefinition
 public class AzureDavidApplication {
 	
 	@Autowired
